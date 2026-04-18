@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>Poster Tool</title>
+
+  <!-- HTMX -->
+
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+
+  <!-- Alpine -->
+
+  <script src="https://unpkg.com/alpinejs@3.x.x" defer></script>
+
+</head>
+
+<body>
+
+<h1>Poster Generator</h1>
+
+<form 
+  hx-post="/generate-form" 
+  hx-target="#result" 
+  hx-swap="innerHTML"
+>
+
+<label>Title:</label><br> <input type="text" name="title"><br><br>
+
+<label>Body:</label><br>
+
+  <textarea name="body"></textarea><br><br>
+
+<label>Date:</label><br> <input type="text" name="date"><br><br>
+
+<label>Signatures (oddelené čiarkou):</label><br> <input type="text" name="signatures"><br><br>
+
+<button type="submit">Generate</button>
+
+</form>
+
+<hr>
+
+<div id="result"></div>
+
+</body>
+</html>
