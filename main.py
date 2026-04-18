@@ -30,6 +30,7 @@ data = {
 "signatures": [s.strip() for s in signatures.split(",") if s.strip()]
 }
 
+```
     path = render_template("official_notice", data)
 
     # cache busting (?t=...) aby sa obrázok vždy obnovil
@@ -37,4 +38,4 @@ data = {
 
 except Exception as e:
     return f"<pre>Error: {str(e)}</pre>"
-
+```
