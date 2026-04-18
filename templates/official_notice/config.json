@@ -38,6 +38,7 @@
       "font": "serif_italic",
       "x": 300,
       "y": 3300,
+      "max_width": 800,
       "max_font_size": 35,
       "min_font_size": 25
     },
