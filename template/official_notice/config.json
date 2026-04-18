@@ -1,0 +1,56 @@
+{
+  "background": "background.png",
+
+  "fonts": {
+    "serif_bold": "cmu_serif_bold.ttf",
+    "serif_italic": "cmu_serif_roman_slanted.ttf",
+    "serif_bold_italic": "cmu_serif_bold_slanted.ttf",
+    "signature": "valentine_delight.ttf"
+  },
+
+  "fields": {
+    "title": {
+      "type": "text",
+      "font": "serif_bold_italic",
+      "x": 1240,
+      "y": 420,
+      "max_width": 1400,
+      "align": "center",
+      "max_font_size": 70,
+      "min_font_size": 50
+    },
+
+    "body": {
+      "type": "multiline",
+      "font": "serif_italic",
+      "x": 350,
+      "y": 700,
+      "max_width": 1800,
+      "max_height": 2000,
+      "align": "justify",
+      "line_height": 60,
+      "max_font_size": 45,
+      "min_font_size": 30
+    },
+
+    "date": {
+      "type": "text",
+      "font": "serif_italic",
+      "x": 300,
+      "y": 3300,
+      "max_font_size": 35,
+      "min_font_size": 25
+    },
+
+    "signatures": {
+      "type": "dynamic_list",
+      "font": "signature",
+      "x": 1200,
+      "y": 3200,
+      "width": 900,
+      "max_per_row": 2,
+      "max_font_size": 40,
+      "min_font_size": 30
+    }
+  }
+}
