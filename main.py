@@ -15,4 +15,5 @@ def root():
 @app.post("/generate")
 def generate(poster: PosterData):
     path = render_template(poster.template, poster.data)
-    return {"image": path}
+    from fastapi.responses import FileResponse
+        return FileResponse(path, media_type="image/png")
