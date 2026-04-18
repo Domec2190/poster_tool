@@ -37,7 +37,7 @@ data = {
 "signatures": [s.strip() for s in signatures.split(",") if s.strip()]
 }
 
-```
+
     # zavolanie renderera
     path = render_template("official_notice", data)
 
@@ -47,4 +47,4 @@ data = {
 except Exception as e:
     # zobrazí chybu priamo na stránke
     return f"<pre>Error: {str(e)}</pre>"
-```
+
